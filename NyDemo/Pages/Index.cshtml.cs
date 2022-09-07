@@ -12,9 +12,11 @@ namespace NyDemo.Pages
     {
         private readonly ILogger<IndexModel> _logger;
 
+       public string AuthorName { get; set; }
         public IndexModel(ILogger<IndexModel> logger)
         {
             _logger = logger;
+            AuthorName = "Krutika";
         }
 
         public void OnGet()
